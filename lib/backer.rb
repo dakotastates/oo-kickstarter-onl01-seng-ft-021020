@@ -12,7 +12,7 @@ class Backer
 
   def back_project(project)
     @project = project
-    @backed_projects << project
+    @backed_projects << project.self
     project.backer = self unless project.backer == self
   end
 
